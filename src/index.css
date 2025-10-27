@@ -1,0 +1,709 @@
+/* ========================================
+   COLLEGE DUNIYA - EXACT COLLEGEDUNIA CLONE
+   100% MATCHING THE SCREENSHOT
+======================================== */
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f5f5;
+}
+
+/* APP CONTAINER */
+.app {
+  /* max-width: 1400px; */
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+}
+
+/* HEADER - EXACT MATCH */
+header {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ff6b35;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-logo::before {
+  
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .header-logo {
+    font-size: 1.4rem;
+  }
+}
+
+.header-search-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+@media (max-width: 700px) {
+  .header-search-section {
+    margin: 0 10px;
+    display: inline-block;
+  }
+}
+
+.header-goal-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  color: #666;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  .header-goal-dropdown {
+    padding: 6px 10px;
+   margin-top: 20px;
+   margin-left: 20px;
+   font-size: 0.8rem;
+   display: none;
+  }
+}
+
+.header-main-search {
+  flex: 1;
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .header-main-search {
+    font-size: 1.7rem;
+    margin-top: 10px;
+    /* display: none; */
+  }
+}
+
+.header-main-search input {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+}
+
+.header-main-search button {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.header-write-review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+  
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.header-write-review span {
+  background: #0b0b0b;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: none;
+  font-size: 0.5rem;
+}
+
+.header-explore {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .header-explore {
+    display: none;
+  }
+}
+
+.header-explore select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.header-menu {
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: 70px;
+  ;
+  padding: 2px;
+  position: relative;
+  right: 9px;
+  bottom: 30px;
+}
+@media (max-width: 700px) {
+  .header-menu {
+    margin-bottom: 20px;
+    position: relative;
+    right: 16px;
+    font-size: 1.3rem;
+  }
+}
+
+/* COURSE NAV - EXACT MATCH */
+.course-nav {
+  background: #333;
+  padding: 10px 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+ 
+}
+
+.course-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.course-nav ul {
+  display: inline-flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.course-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.course-nav a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* HERO SECTION - EXACT MATCH */
+.hero-section {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-search-box {
+  background: rgba(255,255,255,0.95);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-search-input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.hero-search-btn, .hero-counsel-btn {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+
+/* Header.css या inline */
+.header-goal-dropdown, .header-city-dropdown {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.header-goal-dropdown:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/* .header-main-search {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+} */
+
+/* .header-main-search input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+} */
+/* 
+.header-main-search button {
+  padding: 12px 20px;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: bold;
+  width: 70px;
+} */
+
+/* .header-main-search button:hover {
+  background: #e55a2b;
+} */
+
+
+
+
+
+
+
+
+.hero-slider-indicator {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* STUDY GOAL SECTION - EXACT MATCH */
+.study-goal-section {
+  padding: 40px 20px;
+  background: #f8f9fa;
+}
+
+.study-goal-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.study-goal-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.study-goal-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  border: 1px solid #e9ecef;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.study-goal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.study-goal-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.study-goal-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.study-goal-count {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.study-goal-sub {
+  font-size: 0.85rem;
+  color: #999;
+  line-height: 1.4;
+}
+
+/* SEARCH & FILTER */
+.search-section {
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-input, .filter-select {
+  flex: 1;
+  max-width: 300px;
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.search-input:focus, .filter-select:focus {
+  outline: none;
+  border-color: #ff6b35;
+}
+
+/* COLLEGE CARDS */
+.college-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.college-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+}
+
+.college-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.stream-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.view-details-btn {
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+/* SMALL MENU CONTAINER - EXACT MATCH */
+.user-menu-container {
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border: 1px solid #e9ecef;
+  min-width: 160px;
+  z-index: 1000;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.menu-item {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:hover {
+  background: #f8f9fa;
+  color: #ff6b35;
+  padding-left: 20px;
+}
+
+.user-login {
+  border-radius: 8px 8px 0 0;
+}
+
+.admin-login {
+  border-radius: 0 0 8px 8px;
+}
+
+
+
+/* NEWS MARQUEE */
+.news-marquee {
+  background: linear-gradient(90deg, #ff6b35, #f7931e);
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 20px;
+  padding: 15px 0;
+  height: 60px;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+  display: inline-block;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-right: 50px;
+  padding: 0 20px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ADMIN NEWS SECTION */
+.admin-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.news-list {
+  margin-top: 20px;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: white;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border-left: 3px solid #ff6b35;
+}
+
+.news-item span {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.admin-input.small {
+  flex: 1;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.btn-small.edit { background: #28a745; color: white; }
+.btn-small.delete { background: #dc3545; color: white; }
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .marquee-item { font-size: 0.85rem; margin-right: 30px; }
+  .news-item { flex-direction: column; gap: 5px; text-align: center; }
+}
+
+
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .user-menu-container {
+    /* right: 10px;
+    left: 10px; */
+    min-width: auto;
+  }
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  h1{
+    font-size: 1.1rem;
+  }
+  .goal-city{
+    display: none;
+  }
+  .logo1{
+    margin-left: 70px;
+    padding-left: 0px;
+  }
+ 
+   .header-search{
+    display: none;
+   }
+  .header-search-section {
+   
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    
+  }
+  .header-review{
+    display: none;
+  }
+  .header-icon{
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .right{
+    margin-left: 10px;
+    
+  }
+  
+  .search-filter-container {
+    flex-direction: column;
+    gap: 10px;
+     margin-right: 50px;
+    
+  }
+/*  */
+.header-dropdown {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+  font-size: 1rem;
+}
+
+
+
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-search-box {
+    flex-direction: column;
+    width: 80vw;
+
+  }
+  
+  .study-goal-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .college-list {
+    grid-template-columns: 1fr;
+  }
+}

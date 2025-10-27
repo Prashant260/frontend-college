@@ -1,0 +1,152 @@
+.review-importance-page {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050858588-9cb0e5d48d0e?w=1200');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.importance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 50px 0;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card .icon {
+  font-size: 3rem;
+  color: #ff6b35;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  color: #ff6b35;
+  margin: 0;
+}
+
+.stat p {
+  color: #555;
+  font-weight: 500;
+}
+
+.cta-section {
+  text-align: center;
+  background: #fff8f0;
+  padding: 50px;
+  border-radius: 16px;
+  margin: 50px 0;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  background: #ff6b35;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #e55a2b;
+  transform: scale(1.05);
+}
+
+.faq-section {
+  margin: 60px 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+details {
+  background: white;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+summary::marker {
+  color: #ff6b35;
+}
+
+details p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.6;
+}
