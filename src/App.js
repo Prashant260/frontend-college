@@ -17,7 +17,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 
 const API_URL = process.env.REACT_APP_API_URL || "https://backendcollege1.vercel.app";
- fetch(`${API_URL}/api/colleges`)
+ fetch(`${API_URL}api/colleges`)
   .then(res => res.json())
   .then(data => console.log(data))
   .catch(err => console.error(err));
