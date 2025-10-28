@@ -16,10 +16,10 @@ import Header from './components/Header';
 import ProtectedRoute from './components/ProtectedRoute';
 
 
-const API_URL = 'https://fullstck-collgeduniya-backend.onrender.com';
-// fetch(`${API_URL}/api/colleges`);
-// const API_URL = process.env.REACT_APP_API_URL;
-// const API_URL = process.env. PORT=5001;
+const API_URL = 'https://fullstck-collgeduniya-backend.onrender.com'
+ fetch(`${API_URL}/api/colleges`);
+ const API_URL = process.env.REACT_APP_API_URL;
+ const API_URL = process.env. PORT=5001;
 const CollegeContext = createContext();
 const NewsContext = createContext();
 
