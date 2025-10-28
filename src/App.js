@@ -18,8 +18,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
  fetch(`${API_URL}/api/colleges`);
- const API_URL = process.env.REACT_APP_API_URL;
- const API_URL = process.env. PORT=5001;
+
 const CollegeContext = createContext();
 const NewsContext = createContext();
 
