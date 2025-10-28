@@ -16,7 +16,7 @@ import Header from './components/Header';
 import ProtectedRoute from './components/ProtectedRoute';
 
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+const API_URL = process.env.REACT_APP_API_URL;
  fetch(`${API_URL}/api/colleges`);
 
 const CollegeContext = createContext();
