@@ -131,7 +131,7 @@ export const CollegeProvider = ({ children }) => {
     const fetchColleges = async () => {
       setLoading(true); // ⬅️ Start loading
       try {
-        const res = await axios.get(`${API_URL}/colleges`);
+        const res = await axios.get(`${API_URL}colleges`);
         setColleges(res.data);
       } catch (error) {
         console.error('Fetch Error:', error.message);
